@@ -1,0 +1,29 @@
+
+body {
+  background-color: #E8ECEF;
+
+    background: url('/farm.png');
+}
+
+.jumbotron{
+  background: url('/farm.png');
+}
+.centered {
+    padding-top: 200px;
+    text-align: center;
+
+}
+
+.heading{
+  color: #fff
+}
+
+.lead{
+  font-weight: bolder;
+}
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #fff;
+}

@@ -1,0 +1,252 @@
+body
+{
+  background-color:#BFD8B8;
+  font-family: sans-serif;
+
+}
+h1
+{
+
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Cookie', cursive;
+}
+
+
+hr
+{
+  border: none;
+  height: 2px;
+  background-color: black
+
+}
+/*CLASS TAGS*/
+
+.name
+{
+  text-align: center;
+  font-family: 'Cookie', cursive;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.welcome
+{
+  border: solid 15px;
+  margin-bottom: 30px;
+  background-color: #9D84B7;
+
+}
+
+
+.boy
+{
+  width: 10%;
+  position: relative;
+  left: 150px;
+}
+
+
+
+.instructions
+{
+  margin-top: 30px;
+  border: solid 10px;
+  background-color: #F78812
+}
+
+.list
+{
+  border: solid 10px;
+  background-color: #FF0075;
+
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.lightBG{
+  height: 90%;
+  width: 90%;
+  margin-left: 5%;
+  position: relative;
+  border: 1px solid red;
+  overflow: hidden;
+  background-color: #31b6ce;
+}
+
+.darkBG {
+  height: 90%;
+  width: 90%;
+  margin-left: 5%;
+  position: relative;
+  border: 1px solid red;
+  overflow: hidden;
+  background-color: black;
+}
+
+@media (max-width:400px)
+{
+
+  #container{
+    position: relative;
+  }
+
+  .egg{
+    size: relative;
+    border-radius: 50%;
+  }
+}
+
+
+
+/* #container {
+    height: 90%;
+    width: 90%;
+    margin-left: 5%;
+    position: relative;
+    border: 1px solid red;
+    overflow: hidden;
+    background-color: #31b6ce;
+} */
+
+#score_help {
+    text-align: center;
+    font-size: 25px;
+    background-color: #eaeaea;
+}
+
+#branch {
+    position: absolute;
+    height: 2%;
+    width: 100%;
+    background-color: #7b2e00;
+    top: 23%;
+}
+
+.hen {
+    position: absolute;
+    height: 15%;
+    width: 8%;
+    top: 10%;
+    background: url('hen-right.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 100;
+}
+
+#hen1 {
+    left: 20%;
+}
+
+#hen2 {
+    left: 40%;
+}
+
+#hen3 {
+    left: 60%;
+}
+
+.egg {
+    position: absolute;
+    top: 18%;
+    height: 5%;
+    width: 2%;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 99;
+}
+
+#egg1 {
+    left: calc(20% + 8%/2 - 2%/2);
+}
+
+#egg2 {
+    left: calc(40% + 8%/2 - 2%/2);
+}
+
+#egg3 {
+    left: calc(60% + 8%/2 - 2%/2);
+}
+
+.bullseye {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    height: 7%;
+    width: 7%;
+    background: url('/bullseye1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 11;
+}
+
+#bullseye1 {
+    left: calc(20% + 8%/2 - 7%/2);
+}
+
+#bullseye2 {
+    left: calc(40% + 8%/2 - 7%/2);
+}
+
+#bullseye3 {
+    left: calc(60% + 8%/2 - 7%/2);
+}
+
+#floor {
+    position: absolute;
+    height: 7%;
+    width: 100%;
+    background-color: #292929;
+    bottom: 0;
+    z-index: 10;
+}
+
+#basket {
+    height: 100px;
+    width: 85px;
+    position: absolute;
+    bottom: 5px;
+    background: url('/boi.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    z-index: 11;
+}
+
+#score_1 {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    top: 45%;
+    left: 30%;
+}
+
+#restart {
+    border: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    background-color: fuchsia;
+    color: white;
+    top: 40%;
+    font-size: 35px;
+    display: none;
+    cursor: pointer;
+}
+
+#highScore {
+    border: 0;
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    background-color: fuchsia;
+    color: white;
+    top: 40%;
+    font-size: 35px;
+    /* display: none; */
+    cursor: pointer;
+}

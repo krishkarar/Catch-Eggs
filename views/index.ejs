@@ -1,0 +1,89 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Catch The Eggs</title>
+  <link href="css/style1.css" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet"></head>
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+<body>
+  <div class="welcome">
+  <h1>Welcome to CATCH THE EGGS</h1>
+
+  <p class="name"><strong>Developed by Kushagra Karar, IInd year CSE student at <a href="http://www.iiitu.ac.in/#gsc.tab=0">IIIT Una</a></strong></p>
+
+</div>
+<!-- <div >
+  <i class="bi bi-volume-up">button</i>
+</div> -->
+
+  <div id="container" class="lightBG">
+    <!-- <button type="button" class="btn btn-primary">button</button> -->
+    <!-- <i id="masterPlay" class="far fa-2x fa-play-circle "></i> -->
+
+    <script>
+  function play() {
+    var audio = document.getElementById("audio");
+    audio.play();
+  }
+
+  function pause(){
+    var audio = document.getElementById("audio");
+    audio.pause();
+  }
+</script>
+
+<input type="button" value="PLAY MUSIC" onclick="play()">
+<input type="button" value="PAUSE MUSIC" onclick="pause()">
+<audio id="audio" src="audio.mp3"></audio>
+
+
+    <div id="score_help"> Score:
+      <span id="score">0</span> | Life:
+      <span id="life"></span> | Use mouse to control
+    </div>
+
+    <div id="branch"></div>
+
+
+
+    <div id="egg1" class="egg" data-bullseye='1'></div>
+    <div id="egg2" class="egg" data-bullseye='2'></div>
+    <div id="egg3" class="egg" data-bullseye='3'></div>
+
+    <div id="bullseye1" class="bullseye"></div>
+    <div id="bullseye2" class="bullseye"></div>
+    <div id="bullseye3" class="bullseye"></div>
+
+    <div id="basket">
+      <span id="score_1"></span>
+    </div>
+
+    <div id="floor"></div>
+
+    <button id="restart">Restart</button>
+    <button id="highScore">highScore</button>
+
+  </div>
+
+  <div class="instructions">
+  <h2>Instructions: how to play the game?</h2>
+  <a href="/instructions">Click here to read the instructions </a>
+
+</div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/collision_detection.js"></script>
+  <script src="js/variables.js"></script>
+  <script src="js/functions.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
