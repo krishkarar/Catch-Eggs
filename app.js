@@ -16,8 +16,7 @@ app.use(bodyparser.urlencoded({
   extended: true
 }));
 
-// mongoose.connect("mongodb+srv://Kushagra_K:KKkushagra223@cluster0.tgoou.mongodb.net/userDB", {useNewUrlParser: true});
-mongoose.connect("mongodb+srv://kushagra_k:kushagra223_K@cluster0.rsxb8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://kushagra_k:process.env.password@cluster0.rsxb8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 
 
 console.log(process.env.SECRET);
